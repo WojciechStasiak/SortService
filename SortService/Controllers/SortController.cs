@@ -17,7 +17,7 @@ namespace SortService.Controllers
 
 
         [HttpGet("sort/{multipleValues}")]
-        public async Task<List<int>> Sort(string multipleValues)
+        public List<int> Sort(string multipleValues)
         {
             return _sortService.Sort(multipleValues);
         }
